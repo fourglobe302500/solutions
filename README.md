@@ -4,7 +4,7 @@ A github repo that holds the solutions made by Francisco Lima or Fourglobe in ru
 
 ## Solutions:
 
-- [three n plus one](src/problems/three_n_plus_one.rs) - $3n + 1$ problem where if n is even $n = n/2$ and if n is odd $n = 3n+1$, and the cycle length of the starter number is how many iterations it takes for n to reach 0, it is supposed that any n will eventually reach 0 but it is not provem yet, even though it is proven that any n less than $2^{68} ≈ 2.95×1020$.
+- [three n plus one](https://github.com/fourglobe302500/solutions/blob/master/src/problems/three_n_plus_one.rs) - $3n + 1$ problem where if n is even $n = n/2$ and if n is odd $n = 3n+1$, and the cycle length of the starter number is how many iterations it takes for n to reach 0, it is supposed that any n will eventually reach 0 but it is not provem yet, even though it is proven that any n less than $2^{68} ≈ 2.95×1020$.
 
 ## Installation and usage:
 
