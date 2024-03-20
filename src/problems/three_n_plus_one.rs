@@ -1,6 +1,6 @@
 use std::cmp;
 
-use crate::helpers::{end, get_number};
+use crate::helpers::get_number;
 
 pub fn solution() {
     let i = get_number();

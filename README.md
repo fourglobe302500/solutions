@@ -33,4 +33,15 @@ and it will run all solutions listed on the arguments in order
 
 ### Without Rust:
 
-- Not Implemented
+- Install the solutions with your preferred method from the releases
+
+- On a command line run
+```
+solutions.exe --list
+```
+
+to get all solutions and then
+
+```
+solutions.exe  <problem 1> <problem 2> ...
+```

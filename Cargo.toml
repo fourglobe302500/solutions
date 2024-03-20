@@ -1,8 +1,34 @@
 [package]
-name = "clube"
+name = "solutions"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/fourglobe302500/solutions.git"
+authors = ["Fourglobe"]
+
+[package.metadata.wix]
+upgrade-guid = "F3693B3F-E817-4584-BC2E-C0F192EE85FF"
+path-guid = "6AE393F4-7EBD-4873-A3E1-713DA00C5374"
+license = false
+eula = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+# The profile that 'cargo dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
+# Config for 'cargo dist'
+[workspace.metadata.dist]
+# The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
+cargo-dist-version = "0.11.1"
+# CI backends to support
+ci = ["github"]
+# The installers to generate for each app
+installers = ["shell", "powershell", "msi"]
+# Target platforms to build apps for (Rust target-triple syntax)
+targets = ["aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-gnu", "x86_64-pc-windows-msvc"]
+# Publish jobs to run in CI
+pr-run-mode = "plan"
