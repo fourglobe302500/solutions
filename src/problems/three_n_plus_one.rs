@@ -1,8 +1,8 @@
 use std::cmp;
 
-use crate::helpers::get_number;
+use crate::helpers::{self, get_number};
 
-pub fn solution() {
+pub fn solution() -> bool {
     let i = get_number();
     let j = get_number();
     let (i, j) = (cmp::min(i, j), cmp::max(i, j));
@@ -14,6 +14,8 @@ pub fn solution() {
     }
 
     println!("range {}..={} has a max cycle length of {}", i, j, max_len);
+
+    helpers::end()
 }
 
 fn cycle_len(mut n: u32) -> i32 {

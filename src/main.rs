@@ -6,14 +6,17 @@ use problems::*;
 
 macro_rules! get_function {
     ($i:ident) => {
-        (stringify!($i), Box::new($i::solution as fn()) as Box<fn()>)
+        (
+            stringify!($i),
+            Box::new($i::solution as fn() -> bool) as Box<fn() -> bool>,
+        )
     };
 }
 
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    let functions: HashMap<&str, Box<fn()>> = HashMap::from([get_function!(three_n_plus_one)]);
+    let functions = HashMap::from([get_function!(three_n_plus_one), get_function!(minesweeper)]);
 
     if args.len() == 1 {
         println!(
@@ -35,8 +38,7 @@ fn main() {
                 Some(f) => {
                     let mut exit = false;
                     while !exit {
-                        f();
-                        exit = helpers::end();
+                        exit = f();
                     }
                 }
             }
