@@ -48,3 +48,6 @@ to get all solutions and then
 ```
 solutions.exe  <problem 1> <problem 2> ...
 ```
+
+and it will run all solutions listed on the arguments in order
+
