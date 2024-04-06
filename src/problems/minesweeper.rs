@@ -1,6 +1,6 @@
 use std::{cmp, fs};
 
-pub fn solution() -> bool {
+pub fn solution() {
     println!("");
     let raw: String = fs::read("./samples/minesweeper.txt")
         .expect("file not found")
@@ -48,8 +48,6 @@ pub fn solution() -> bool {
         }
         println!("");
     }
-
-    true
 }
 
 fn get_neighbors(field: &Vec<Vec<char>>, i: usize, j: usize) -> char {

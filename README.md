@@ -6,7 +6,9 @@ A github repo that holds the solutions made by Francisco Lima or Fourglobe in ru
 
 - [three n plus one](https://github.com/fourglobe302500/solutions/blob/master/src/problems/three_n_plus_one.rs) - [3n + 1](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=36) problem where if n is even $n = n/2$ and if n is odd $n = 3n+1$, and the cycle length of the starter number is how many iterations it takes for n to reach 0, it is supposed that any n will eventually reach 0 but it is not provem yet, even though it is proven that any n less than $2^{68} ≈ 2.95×1020$.
 
-- [minesweeper](https://github.com/fourglobe302500/solutions/blob/master/src/problems/minesweeper.rs) - [minesweeper](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=1130) is a problem where given a field of $N×M$ with __'$`.`$'__ as safe spaces and __'$`*`$'__ as mines returns a populated field with the mine count of each cell. 
+- [minesweeper](https://github.com/fourglobe302500/solutions/blob/master/src/problems/minesweeper.rs) - [minesweeper](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=1130) is a problem where given a field of $N×M$ with **'$`.`$'** as safe spaces and **'$`*`$'** as mines returns a populated field with the mine count of each cell.
+
+- [making change](https://github.com/fourglobe302500/solutions/blob/master/src/problems/making_change.rs) - [making_change](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=102) is a problem where given a restricted amount of coins, return the minimum amount of coins exchanged.
 
 ## Installation and usage:
 
@@ -50,4 +52,3 @@ solutions.exe  <problem 1> <problem 2> ...
 ```
 
 and it will run all solutions listed on the arguments in order
-
