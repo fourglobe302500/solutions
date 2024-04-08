@@ -4,11 +4,13 @@ A github repo that holds the solutions made by Francisco Lima or Fourglobe in ru
 
 ## Solutions:
 
-- [three n plus one](https://github.com/fourglobe302500/solutions/blob/master/src/problems/three_n_plus_one.rs) - [3n + 1](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=36) problem where if n is even $n = n/2$ and if n is odd $n = 3n+1$, and the cycle length of the starter number is how many iterations it takes for n to reach 0, it is supposed that any n will eventually reach 0 but it is not provem yet, even though it is proven that any n less than $2^{68} ≈ 2.95×1020$.
+- [3n + 1](https://github.com/fourglobe302500/solutions/blob/master/src/problems/three_n_plus_one.rs) - [UV100](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=36) problem where if n is even $n = n/2$ and if n is odd $n = 3n+1$, and the cycle length of the starter number is how many iterations it takes for n to reach 0, it is supposed that any n will eventually reach 0 but it is not provem yet, even though it is proven that any n less than $2^{68} ≈ 2.95×1020$.
 
-- [minesweeper](https://github.com/fourglobe302500/solutions/blob/master/src/problems/minesweeper.rs) - [minesweeper](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=1130) is a problem where given a field of $N×M$ with **'$`.`$'** as safe spaces and **'$`*`$'** as mines returns a populated field with the mine count of each cell.
+- [Minesweeper](https://github.com/fourglobe302500/solutions/blob/master/src/problems/minesweeper.rs) - [UV10189](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=1130) is a problem where given a field of $N×M$ with **'$`.`$'** as safe spaces and **'$`*`$'** as mines returns a populated field with the mine count of each cell.
 
-- [making change](https://github.com/fourglobe302500/solutions/blob/master/src/problems/making_change.rs) - [making_change](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=102) is a problem where given a restricted amount of coins, return the minimum amount of coins exchanged.
+- [Making Change](https://github.com/fourglobe302500/solutions/blob/master/src/problems/making_change.rs) - [UV166](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=102) is a problem where given a restricted amount of coins, return the minimum amount of coins exchanged.
+
+- [Station Balance](https://github.com/fourglobe302500/solutions/blob/master/src/problems/station_balance.rs) - [UV410](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=6&page=show_problem&problem=351) is a problem where given a number of chambers and weights place them in a way that the diference between the sum of the values in each chamber and the average weight on all chambers is minimal.
 
 ## Installation and usage:
 

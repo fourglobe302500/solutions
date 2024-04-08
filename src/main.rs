@@ -17,6 +17,7 @@ fn main() {
         get_function!(three_n_plus_one),
         get_function!(minesweeper),
         get_function!(making_change),
+        get_function!(station_balance),
     ]);
 
     if args.len() == 1 {

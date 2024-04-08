@@ -1,4 +1,4 @@
-use std::{cmp::min, fs, str::FromStr};
+use std::{fs, str::FromStr};
 
 use itertools::Itertools;
 
@@ -73,11 +73,15 @@ pub fn solution() {
 
     for line in lines {
         let wallet: Wallet = line.parse().expect("invalid values");
-        println!("{:?}", wallet);
+        // println!("{:?}", wallet);
         let possible_payments = wallet.pay();
 
         let mut min_amount = u8::MAX;
         for (value, mut count) in possible_payments {
+            if wallet.6 > value {
+                // println!("{}|{}", wallet.6, value);
+                continue;
+            }
             let mut change = value - wallet.6;
             for coin in [(200), (100), (50), (20), (10), (5)] {
                 while change >= coin {
