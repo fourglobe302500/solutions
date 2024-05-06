@@ -12,6 +12,8 @@ A github repo that holds the solutions made by Francisco Lima or Fourglobe in ru
 
 - [Station Balance](https://github.com/fourglobe302500/solutions/blob/master/src/problems/station_balance.rs) - [UV410](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=6&page=show_problem&problem=351) is a problem where given a number of chambers and weights place them in a way that the diference between the sum of the values in each chamber and the average weight on all chambers is minimal.
 
+- [The Dragon of Loowater](https://github.com/fourglobe302500/solutions/blob/master/src/problems/loowater.rs) - [UV11292](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2267) is a problem where given a amount of heads and knight and their diameters and heights, calculate if the dragon can be killed and when it can how many gold coins it's going to cost.
+
 ## Installation and usage:
 
 ### With Rust:

@@ -18,6 +18,7 @@ fn main() {
         get_function!(minesweeper),
         get_function!(making_change),
         get_function!(station_balance),
+        get_function!(loowater),
     ]);
 
     if args.len() == 1 {
@@ -33,7 +34,7 @@ fn main() {
         let names: Vec<_> = args.into_iter().skip(1).collect();
 
         for name in names {
-            println!("Running {}", &name);
+            // println!("Running {}", &name);
 
             match functions.get::<str>(name.borrow()) {
                 None => println!("problem '{}' does not exist", name),
